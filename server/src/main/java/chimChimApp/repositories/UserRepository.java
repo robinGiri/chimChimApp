@@ -1,0 +1,11 @@
+package chimChimApp.repositories;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import chimChimApp.models.User;
+
+public interface UserRepository extends JpaRepository<User, Integer> {
+    void deleteById(int id);
+
+    User findByEmail(String email);
+
+}
