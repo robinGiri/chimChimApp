@@ -59,14 +59,14 @@ function Register() {
                   position: 'absolute',
                   bottom: 1,
                   left: 0,
-                  bg: 'pink.500',
+                  bg: 'green.500',
                   zIndex: -1,
                 }}>
-                Spring-React
+                Chim-Chim
               </Text>
               <br />{' '}
-              <Text color={'pink.500'} as={'span'}>
-                Social Media App
+              <Text color={'green.500'} as={'span'}>
+                Let's get started
               </Text>{' '}
             </Heading>
           </Stack>
@@ -116,7 +116,7 @@ function Register() {
                 name='password'
                 type='password' />
             </FormControl>
-            <Button type='submit' colorScheme={'pink'}>Register</Button>
+            <Button type='submit' colorScheme={'green'}>Register</Button>
             <Button as={Link} to={"/login"}>Login</Button>
            
           </VStack>

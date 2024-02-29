@@ -139,7 +139,7 @@ function UserCard({ image, fullName, followers, following, isFollowing, isOwner,
                                     <Button
                                         w={'full'}
                                         mt={8}
-                                        colorScheme='pink'
+                                        colorScheme='green'
                                         color={'white'}
                                         rounded={'md'}
                                         onClick={() => { handleFollow(user.id, parseInt(userId)) }}

@@ -97,7 +97,7 @@ function PostCard({ userName, userImage, description, postImage, postId, userId 
             >
                 {
                     isLiked ?
-                        <Button onClick={()=>handleUnlike()} flex='1' colorScheme={'pink'} leftIcon={<BiLike />}>
+                        <Button onClick={()=>handleUnlike()} flex='1' colorScheme={'blue'} leftIcon={<BiLike />}>
                             Like {likes.length}
                         </Button>
                         : <Button onClick={() => handleLike()} flex='1' variant='ghost' leftIcon={<BiLike />}>

@@ -20,7 +20,7 @@ function ProfileCard({userName,userImage}) {
                                
                             </Box>
                         </Flex>
-                        <Button  onClick={()=>logout()} colorScheme={'pink'}>Log out</Button>
+                        <Button  onClick={()=>logout()} colorScheme={'green'}>Log out</Button>
                     </HStack>
                 </CardHeader>
             </Card>
