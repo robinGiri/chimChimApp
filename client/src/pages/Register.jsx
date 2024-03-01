@@ -1,10 +1,10 @@
-import { Button, Container, Flex, FormControl, FormLabel, Heading, Image, Input, Stack, Text, useBreakpointValue, useToast, VStack } from '@chakra-ui/react'
+import { Button, Container, Flex, FormControl, FormLabel, Heading, Image, Input, Stack, useToast, VStack } from '@chakra-ui/react'
 import { useFormik } from 'formik'
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import AuthContext from '../context/AuthContext'
 import AuthService from '../services/AuthService'
-import svg from '../svgs/main.svg'
+import svg from '../svgs/main.png'
 
 function Register() {
 
@@ -47,29 +47,6 @@ function Register() {
     <Stack direction={'row'} spacing={0} minH={'100vh'}>
       <Flex alignItems={'center'} justifyContent={'center'} width={{ base: 0, md: '100%', lg: '100%' }}>
         <VStack p={10} spacing={5}>
-          <Stack spacing={6} w={'full'} maxW={'lg'}>
-            <Heading fontSize={{ base: '0', md: '5xl', lg: '6xl' }}>
-              <Text
-                as={'span'}
-                position={'relative'}
-                _after={{
-                  content: "''",
-                  width: 'full',
-                  height: useBreakpointValue({ base: '20%', md: '30%' }),
-                  position: 'absolute',
-                  bottom: 1,
-                  left: 0,
-                  bg: 'green.500',
-                  zIndex: -1,
-                }}>
-                Chim-Chim
-              </Text>
-              <br />{' '}
-              <Text color={'green.500'} as={'span'}>
-                Let's get started
-              </Text>{' '}
-            </Heading>
-          </Stack>
           <Image src={svg} />
         </VStack>
       </Flex>
